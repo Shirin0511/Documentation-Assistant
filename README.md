@@ -1,11 +1,11 @@
 # 📚 Documentation Assistant for GitHub API Docs
 
-A **RAG** system that answers questions about GitHub REST API documentation using semantic search with MMR retriever + LLM generation.
+A **RAG** system that answers questions about GitHub REST API documentation using vector search with MMR retriever + LLM generation.
 
 This project demonstrates an end-to-end RAG pipeline including:
 
 - Web ingestion
-- Semantic chunking
+- Header-based structural chunking
 - Embeddings
 - Vector database indexing
 - Retriever design
@@ -28,7 +28,7 @@ HTML Loader
     ↓
 Markdown Conversion
     ↓
-Semantic Chunker
+Structural Chunker (Header-based)
     ↓
 Embeddings (Sentence Transformers)
     ↓
@@ -102,8 +102,7 @@ Instead of naive fixed-size chunking, this system uses:
 ## Header-Aware Chunking
 
 - Split on H1, H2 and H3 markdown headers
-- Preserves semantic topic boundaries
-- Aligns with user query intent
+- Aligns with user query intent naturally, since API docs are organized by endpoint/topic
 
 ## Size Enforcement
 
