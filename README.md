@@ -95,7 +95,7 @@ Easily extensible to multiple documentation sources.
 
 ---
 
-# Chunking Strategy (Industry Style)
+# Chunking Strategy 
 
 Instead of naive fixed-size chunking, this system uses:
 
