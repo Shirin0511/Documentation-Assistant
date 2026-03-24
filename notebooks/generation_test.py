@@ -1,5 +1,5 @@
-from RAG.vectorstore.ingestion import IngestionPipeline
-from RAG.generation.rag_chain import RAGGenerator
+from vectorstore.ingestion import IngestionPipeline
+from generation.rag_chain import RAGGenerator
 import os
 
 

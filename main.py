@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from RAG.notebooks.generation_test import generate_answer
+from notebooks.generation_test import generate_answer
 
 
 app= FastAPI()
