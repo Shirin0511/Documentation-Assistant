@@ -18,7 +18,7 @@ def home():
 
 
 @app.post('/query')
-def generate_response(query: QueryRequest):
+async def generate_response(query: QueryRequest):
 
     answer = generate_answer(query.question)
     return {'answer':answer}
