@@ -2,8 +2,8 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 
-from RAG.ingestion.web_loader import GithubDocLoader
-from RAG.processing.chunker import DocumentChunker
+from ingestion.web_loader import GithubDocLoader
+from processing.chunker import DocumentChunker
 
 class IngestionPipeline:
     def __init__(self, collection_name : str ="api_docs"):
