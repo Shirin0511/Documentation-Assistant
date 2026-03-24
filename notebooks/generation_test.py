@@ -8,6 +8,8 @@ generator = None
 
 def run_generation():
 
+    global pipeline, generator
+
     if generator is None:
         pipeline = IngestionPipeline(
         collection_name='github_issues_api_gen'
